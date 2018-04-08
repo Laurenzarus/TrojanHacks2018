@@ -1,3 +1,16 @@
 #header {
    text-align: center; 
 }
+p {
+	text-align: center;
+}
+#question {
+	font-size: 30px;
+	font-family: Arial;
+}
+body {
+	background-color: #9E1D32;
+}
+a {
+	color: #FFC828;
+}
