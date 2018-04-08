@@ -61,6 +61,11 @@ body {
     font-size: 35px;
     opacity: 0;
 }
+
+#playAgain {
+    display: none;
+}
+
 .outOfBoxText {
     color: #FFC828;
 }
