@@ -34,16 +34,25 @@
     </body>
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
     <script>
+    var user = "";
+    $(document).ready(function(){
+        var user = sessionStorage.getItem("username");
+        console.log(user);
+           if (user != ""){
+               $("#login").html("Hello " + user + "!");
+               $("#login").css("opacity", "1")
+           }
+    })
         function logIn(){
-            // inport System.IO;
-            // inport System;
             var user = prompt("please enter your first name", "Tommy");
             console.log(user);
-            // sw = new StreamWriter("UserName.txt");
-            // sw.Write(user);
-            // sw.Close();
-            $("#login").html("Hello " + user + "!");
-            $("#login").css("opacity", "1")
+            sessionStorage.setItem("username",user);
+            var test = sessionStorage.getItem("username");
+            console.log(test);
+            if (user != ""){
+                $("#login").html("Hello " + user + "!");
+                $("#login").css("opacity", "1")
+            }
         }
     </script>
 </html>
