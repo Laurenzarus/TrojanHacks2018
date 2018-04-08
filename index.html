@@ -46,12 +46,14 @@
            }
     })
         function logIn(){
-            var user = prompt("please enter your first name", "Tommy");
-            console.log(user);
+            if (user === null){
+                var user = prompt("Please enter your first name", "Tommy");
+            }
+            else{
+                var user = prompt("Please enter your first name", user);
+            }
             sessionStorage.setItem("username",user);
-            var test = sessionStorage.getItem("username");
-            console.log(test);
-            if (user != ""){
+            if (user != null){
                 $("#login").html("Hello " + user + "!");
                 $("#login").css("opacity", "1")
             }
