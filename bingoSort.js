@@ -11,6 +11,8 @@ function randomize() {
     rSorted.sort(function(a, b){return 0.5 - Math.random()});
 }
 
+randomize();
+
 document.getElementById("data00").innerHTML = rSorted[0];
 document.getElementById("data01").innerHTML = rSorted[1];
 document.getElementById("data02").innerHTML = rSorted[2];
