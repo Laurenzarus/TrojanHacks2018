@@ -19,127 +19,127 @@ $(this).click(function(event){
 	var j;
 	var id;
 	console.log(event.target.id);
-	if (event.target.id === "data00"){
+	if (event.target.id === "check00"){
 		id = "#img00";
 		i = 0;
 		j = 0;
 	}
-	if (event.target.id === "data01"){
+	if (event.target.id === "check01"){
 		id = "#img01";
 		i = 0;
 		j = 1;
 	}
-	if (event.target.id === "data02"){
+	if (event.target.id === "check02"){
 		id = "#img02";
 		i = 0;
 		j = 2;
 	}
-	if (event.target.id === "data03"){
+	if (event.target.id === "check03"){
 		id = "#img03";
 		i = 0;
 		j = 3;
 	}
-	if (event.target.id === "data04"){
+	if (event.target.id === "check04"){
 		id = "#img04";
 		i = 0;
 		j = 4;
 	}
-	if (event.target.id === "data10"){
+	if (event.target.id === "check10"){
 		id = "#img10";
 		i = 1;
 		j = 0;
 	}
-	if (event.target.id === "data11"){
+	if (event.target.id === "check11"){
 		id = "#img11";
 		i = 1;
 		j = 1;
 	}
-	if (event.target.id === "data12"){
+	if (event.target.id === "check12"){
 		id = "#img12";
 		i = 1;
 		j = 2;
 	}
-	if (event.target.id === "data13"){
+	if (event.target.id === "check13"){
 		id = "#img13";
 		i = 1;
 		j = 3;
 	}
-	if (event.target.id === "data14"){
+	if (event.target.id === "check14"){
 		id = "#img14";
 		i = 1;
 		j = 4;
 	}
-	if (event.target.id === "data20"){
+	if (event.target.id === "check20"){
 		id = "#img20";
 		i = 2;
 		j = 0;
 	}
-	if (event.target.id === "data21"){
+	if (event.target.id === "check21"){
 		id = "#img21";
 		i = 2;
 		j = 1;
 	}
-	if (event.target.id === "data22"){
+	if (event.target.id === "check22"){
 		id = "#img22";
 		i = 2;
 		j = 2;
 	}
-	if (event.target.id === "data23"){
+	if (event.target.id === "check23"){
 		id = "#img23";
 		i = 2;
 		j = 3;
 	}
-	if (event.target.id === "data24"){
+	if (event.target.id === "check24"){
 		id = "#img24";
 		i = 2;
 		j = 4;
 	}
-	if (event.target.id === "data30"){
+	if (event.target.id === "check30"){
 		id = "#img30";
 		i = 3;
 		j = 0;
 	}
-	if (event.target.id === "data31"){
+	if (event.target.id === "check31"){
 		id = "#img31";
 		i = 3;
 		j = 1;
 	}
-	if (event.target.id === "data32"){
+	if (event.target.id === "check32"){
 		id = "#img32";
 		i = 3;
 		j = 2;
 	}	
-	if (event.target.id === "data33"){
+	if (event.target.id === "check33"){
 		id = "#img33";
 		i = 3;
 		j = 3;
 	}
-	if (event.target.id === "data34"){
+	if (event.target.id === "check34"){
 		id = "#img34";
 		i = 3;
 		j = 4;
 	}
-	if (event.target.id === "data40"){
+	if (event.target.id === "check40"){
 		id = "#img40";
 		i = 4;
 		j = 0;
 	}
-	if (event.target.id === "data41"){
+	if (event.target.id === "check41"){
 		id = "#img41";
 		i = 4;
 		j = 1;
 	}
-	if (event.target.id === "data42"){
+	if (event.target.id === "check42"){
 		id = "#img42";
 		i = 4;
 		j = 2;
 	}
-	if (event.target.id === "data43"){
+	if (event.target.id === "check43"){
 		id = "#img43";
 		i = 4;
 		j = 3;
 	}
-	if (event.target.id === "data44"){
+	if (event.target.id === "check44"){
 		id = "#img44";
 		i = 4;
 		j = 4;

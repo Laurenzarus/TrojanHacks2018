@@ -15,6 +15,15 @@ table td img {
     top: 6px;
     
 }
+.c {
+    z-index: 100;
+}
+.d {
+    z-index: 1;
+}
+.x {
+    z-index: 50;
+}
 td { /*The comma allows you to apply the same set of CSS to more tags*/
     border: 2px solid #FFC828;
     height: 100px;
