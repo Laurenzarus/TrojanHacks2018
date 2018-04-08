@@ -3,111 +3,111 @@ $(document).ready(init)
 $(this).click(function(event){
 	var i;
 	var j;
-	if(event.target == #img00){
+	if(event.target === #img00){
 		i = 0;
 		j = 0;
 	}
-	if (event.target == #img01){
+	if (event.target === #img01){
 		i = 0;
 		j = 1;
 	}
-	if (event.target == #img01){
+	if (event.target === #img01){
 		i = 0;
 		j = 1;
 	}
-	if (event.target == #img02){
+	if (event.target === #img02){
 		i = 0;
 		j = 2;
 	}
-	if (event.target == #img03){
+	if (event.target === #img03){
 		i = 0;
 		j = 3;
 	}
-	if (event.target == #img04){
+	if (event.target === #img04){
 		i = 0;
 		j = 4;
 	}
-	if (event.target == #img10){
+	if (event.target === #img10){
 		i = 1;
 		j = 0;
 	}
-	if (event.target == #img11){
+	if (event.target === #img11){
 		i = 1;
 		j = 1;
 	}
-	if (event.target == #img12){
+	if (event.target === #img12){
 		i = 1;
 		j = 2;
 	}
-	if (event.target == #img13){
+	if (event.target === #img13){
 		i = 1;
 		j = 3;
 	}
-	if (event.target == #img14){
+	if (event.target === #img14){
 		i = 1;
 		j = 4;
 	}
-	if (event.target == #img20){
+	if (event.target === #img20){
 		i = 2;
 		j = 0;
 	}
-	if (event.target == #img21){
+	if (event.target === #img21){
 		i = 2;
 		j = 1;
 	}
-	if (event.target == #img22){
+	if (event.target === #img22){
 		i = 2;
 		j = 2;
 	}
-	if (event.target == #img23){
+	if (event.target === #img23){
 		i = 2;
 		j = 3;
 	}
-	if (event.target == #img24){
+	if (event.target === #img24){
 		i = 2;
 		j = 4;
 	}
-	if (event.target == #img30){
+	if (event.target === #img30){
 		i = 3;
 		j = 0;
 	}
-	if (event.target == #img31){
+	if (event.target === #img31){
 		i = 3;
 		j = 1;
 	}
-	if (event.target == #img32){
+	if (event.target === #img32){
 		i = 3;
 		j = 2;
 	}	
-	if (event.target == #img33){
+	if (event.target === #img33){
 		i = 3;
 		j = 3;
 	}
-	if (event.target == #img34){
+	if (event.target === #img34){
 		i = 3;
 		j = 4;
 	}
-	if (event.target == #img40){
+	if (event.target === #img40){
 		i = 4;
 		j = 0;
 	}
-	if (event.target == #img41){
+	if (event.target === #img41){
 		i = 4;
 		j = 1;
 	}
-	if (event.target == #img41){
+	if (event.target === #img41){
 		i = 4;
 		j = 1;
 	}
-	if (event.target == #img42){
+	if (event.target === #img42){
 		i = 4;
 		j = 2;
 	}
-	if (event.target == #img43){
+	if (event.target === #img43){
 		i = 4;
 		j = 3;
 	}
-	if (event.target == #img44){
+	if (event.target === #img44){
 		i = 4;
 		j = 4;
 	}
