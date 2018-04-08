@@ -9,8 +9,10 @@
             <div id="header">
                 <h1 style="text-align: center">Welcome to USC Bingo!</h1>
             </div>
+                <button class="logIn" onclick="logIn()">Log In</button>
+            </div>
             <div id="textFields">
-                <p style="padding-top: 12%;" id="question">
+                <p style="padding-top: 6%;" id="question">
                     Which Bingo board would you like to play on today?
                 </p>
                 
@@ -29,7 +31,11 @@
         </div>
         
     </body>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
     <script>
-        
+        function logIn(){
+            var user = prompt("please enter your first name", "Tommy");
+            console.log(user);
+        }
     </script>
 </html>

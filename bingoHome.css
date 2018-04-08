@@ -6,6 +6,7 @@ p {
 	color: #FFC828;
 }
 #question {
+	top: 30%;
 	font-size: 30px;
 	/*font-family: Arial;*/
 }
@@ -28,7 +29,7 @@ a {
 .studPic {
 	position: absolute;
 	height: 300px;
-	top: 50%;
+	top: 40%;
 	left: 25%;
 	transform: translate(-55%, 0%);
 }
@@ -36,7 +37,7 @@ a {
 .gameDay {
 	position: absolute;
 	height: 300px;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, 0%);
 }
@@ -44,8 +45,25 @@ a {
 .professor {
 	position: absolute;
 	height: 300px;
-	top: 50%;
+	top: 40%;
 	left: 75%;
 	transform: translate(-45%, 0%);
 
+}
+
+.logIn{
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #9E1D32;
+	background-color: #FFC828;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
