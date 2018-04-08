@@ -3,14 +3,49 @@
 }
 p {
 	text-align: center;
+	color: #FFC828;
 }
 #question {
 	font-size: 30px;
-	font-family: Arial;
+	/*font-family: Arial;*/
+}
+h1 {
+	color: #FFC828;
 }
 body {
 	background-color: #9E1D32;
 }
 a {
 	color: #FFC828;
+	text-decoration: none;
+}
+
+.caption {
+	text-align: center;
+	/*transform: translate(-50%, 0%);*/
+}
+
+.studPic {
+	position: absolute;
+	height: 300px;
+	top: 50%;
+	left: 25%;
+	transform: translate(-55%, 0%);
+}
+
+.gameDay {
+	position: absolute;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+.professor {
+	position: absolute;
+	height: 300px;
+	top: 50%;
+	left: 75%;
+	transform: translate(-45%, 0%);
+
 }
