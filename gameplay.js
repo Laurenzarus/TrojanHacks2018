@@ -124,16 +124,16 @@ $(this).click(function(event){
 	if (!clicked[i][j]){
 		$(event.target).css("opacity", "1")
 		clicked[i][j] = true;
-		var win = checkwin(i, j);
+		var won = checkwin(i, j);
 	}
 	else{
 		$(event.target).css("opacity", "0")
 		clicked[i][j] = false;
 	}
-	console.log(win);
-	// if (win){
-		// win(i, j);
-	// }
+	// console.log(win);
+	if (won){
+		win(i, j);
+	}
 })
 
 function checkwin(i, j){
@@ -169,6 +169,118 @@ function checkwin(i, j){
 	}
 }
 
-// function win( i, j){
-
-// }
+function win( i, j){
+		var xrow = 0;
+	var xcol = 0;
+	var xdiagdown = 0;
+	var xdiagup = 0;
+	for (var k = 0; k < 5; k++){
+		if (clicked[k][j]){
+			xcol++;
+		}
+	}
+	for (var k = 0; k < 5; k++){
+		if (clicked[i][k]){
+			xrow++;
+		}
+	}
+	for (var k = 0; k < 5; k++){
+		if (clicked[k][k]){
+			xdiagdown++;
+		}
+	}
+	for (var k = 0; k < 5; k++){
+		if (clicked[k][4 - k]){
+			xdiagup++;
+		}
+	}
+	if (xcol >= 5){
+		if (i === 0){
+			$("#check00").css("opacity", "1")
+			$("#check01").css("opacity", "1")
+			$("#check02").css("opacity", "1")
+			$("#check03").css("opacity", "1")
+			$("#check04").css("opacity", "1")
+		}
+		if (i === 1){
+			$("#check10").css("opacity", "1")
+			$("#check11").css("opacity", "1")
+			$("#check12").css("opacity", "1")
+			$("#check13").css("opacity", "1")
+			$("#check14").css("opacity", "1")
+		}
+		if (i === 2){
+			$("#check20").css("opacity", "1")
+			$("#check21").css("opacity", "1")
+			$("#check22").css("opacity", "1")
+			$("#check23").css("opacity", "1")
+			$("#check24").css("opacity", "1")
+		}
+		if (i === 3){
+			$("#check30").css("opacity", "1")
+			$("#check31").css("opacity", "1")
+			$("#check32").css("opacity", "1")
+			$("#check33").css("opacity", "1")
+			$("#check34").css("opacity", "1")
+		}
+		if (i === 4){
+			$("#check40").css("opacity", "1")
+			$("#check41").css("opacity", "1")
+			$("#check42").css("opacity", "1")
+			$("#check43").css("opacity", "1")
+			$("#check44").css("opacity", "1")
+		}
+	}
+	if (xrow >= 5){
+		if (j === 0){
+			$("#check00").css("opacity", "1")
+			$("#check10").css("opacity", "1")
+			$("#check20").css("opacity", "1")
+			$("#check30").css("opacity", "1")
+			$("#check40").css("opacity", "1")
+		}
+		if (j === 1){
+			$("#check01").css("opacity", "1")
+			$("#check11").css("opacity", "1")
+			$("#check21").css("opacity", "1")
+			$("#check31").css("opacity", "1")
+			$("#check41").css("opacity", "1")
+		}
+		if (j === 2){
+			$("#check02").css("opacity", "1")
+			$("#check12").css("opacity", "1")
+			$("#check22").css("opacity", "1")
+			$("#check32").css("opacity", "1")
+			$("#check42").css("opacity", "1")
+		}
+		if (j === 3){
+			$("#check03").css("opacity", "1")
+			$("#check13").css("opacity", "1")
+			$("#check23").css("opacity", "1")
+			$("#check33").css("opacity", "1")
+			$("#check43").css("opacity", "1")
+		}
+		if (j === 4){
+			$("#check04").css("opacity", "1")
+			$("#check14").css("opacity", "1")
+			$("#check24").css("opacity", "1")
+			$("#check34").css("opacity", "1")
+			$("#check44").css("opacity", "1")
+		}	
+	}
+	if (xdiagdown >= 5){
+		$("#check00").css("opacity", "1")
+		$("#check11").css("opacity", "1")
+		$("#check22").css("opacity", "1")
+		$("#check33").css("opacity", "1")
+		$("#check44").css("opacity", "1")
+	}
+	if (xdiagup >= 5){
+		$("#check04").css("opacity", "1")
+		$("#check13").css("opacity", "1")
+		$("#check22").css("opacity", "1")
+		$("#check31").css("opacity", "1")
+		$("#check40").css("opacity", "1")
+	}
+	$("#youWin").css("opacity", "1")
+}
