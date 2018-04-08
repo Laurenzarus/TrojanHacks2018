@@ -1,7 +1,11 @@
 #header {
    text-align: center; 
-   top: 0%;
-   font-family: 'Bungee Shade'; font-size: 22px;
+   top: 0;
+   padding-top: 0px;
+   margin-top: 0px;
+   font-family: 'Bungee Shade'; 
+   font-size: 48px;
+   line-height: 0%;
 }
 p {
 	text-align: center;
@@ -14,7 +18,7 @@ p {
 	opacity: 0;
 }
 #question {
-	top: 30%;
+	top: 60%;
 	font-size: 30px;
 	/*font-family: Arial;*/
 }
