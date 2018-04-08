@@ -18,127 +18,128 @@ $(this).click(function(event){
 	var i;
 	var j;
 	var id;
-	if (event.target.id === "check00"){
+	console.log(event.target.id);
+	if (event.target.id === "data00"){
 		id = "#img00";
 		i = 0;
 		j = 0;
 	}
-	if (event.target.id === "check01"){
+	if (event.target.id === "data01"){
 		id = "#img01";
 		i = 0;
 		j = 1;
 	}
-	if (event.target.id === "check02"){
+	if (event.target.id === "data02"){
 		id = "#img02";
 		i = 0;
 		j = 2;
 	}
-	if (event.target.id === "check03"){
+	if (event.target.id === "data03"){
 		id = "#img03";
 		i = 0;
 		j = 3;
 	}
-	if (event.target.id === "check04"){
+	if (event.target.id === "data04"){
 		id = "#img04";
 		i = 0;
 		j = 4;
 	}
-	if (event.target.id === "check10"){
+	if (event.target.id === "data10"){
 		id = "#img10";
 		i = 1;
 		j = 0;
 	}
-	if (event.target.id === "check11"){
+	if (event.target.id === "data11"){
 		id = "#img11";
 		i = 1;
 		j = 1;
 	}
-	if (event.target.id === "check12"){
+	if (event.target.id === "data12"){
 		id = "#img12";
 		i = 1;
 		j = 2;
 	}
-	if (event.target.id === "check13"){
+	if (event.target.id === "data13"){
 		id = "#img13";
 		i = 1;
 		j = 3;
 	}
-	if (event.target.id === "check14"){
+	if (event.target.id === "data14"){
 		id = "#img14";
 		i = 1;
 		j = 4;
 	}
-	if (event.target.id === "check20"){
+	if (event.target.id === "data20"){
 		id = "#img20";
 		i = 2;
 		j = 0;
 	}
-	if (event.target.id === "check21"){
+	if (event.target.id === "data21"){
 		id = "#img21";
 		i = 2;
 		j = 1;
 	}
-	if (event.target.id === "check22"){
+	if (event.target.id === "data22"){
 		id = "#img22";
 		i = 2;
 		j = 2;
 	}
-	if (event.target.id === "check23"){
+	if (event.target.id === "data23"){
 		id = "#img23";
 		i = 2;
 		j = 3;
 	}
-	if (event.target.id === "check24"){
+	if (event.target.id === "data24"){
 		id = "#img24";
 		i = 2;
 		j = 4;
 	}
-	if (event.target.id === "check30"){
+	if (event.target.id === "data30"){
 		id = "#img30";
 		i = 3;
 		j = 0;
 	}
-	if (event.target.id === "check31"){
+	if (event.target.id === "data31"){
 		id = "#img31";
 		i = 3;
 		j = 1;
 	}
-	if (event.target.id === "check32"){
+	if (event.target.id === "data32"){
 		id = "#img32";
 		i = 3;
 		j = 2;
 	}	
-	if (event.target.id === "check33"){
+	if (event.target.id === "data33"){
 		id = "#img33";
 		i = 3;
 		j = 3;
 	}
-	if (event.target.id === "check34"){
+	if (event.target.id === "data34"){
 		id = "#img34";
 		i = 3;
 		j = 4;
 	}
-	if (event.target.id === "check40"){
+	if (event.target.id === "data40"){
 		id = "#img40";
 		i = 4;
 		j = 0;
 	}
-	if (event.target.id === "check41"){
+	if (event.target.id === "data41"){
 		id = "#img41";
 		i = 4;
 		j = 1;
 	}
-	if (event.target.id === "check42"){
+	if (event.target.id === "data42"){
 		id = "#img42";
 		i = 4;
 		j = 2;
 	}
-	if (event.target.id === "check43"){
+	if (event.target.id === "data43"){
 		id = "#img43";
 		i = 4;
 		j = 3;
 	}
-	if (event.target.id === "check44"){
+	if (event.target.id === "data44"){
 		id = "#img44";
 		i = 4;
 		j = 4;
@@ -152,7 +153,7 @@ $(this).click(function(event){
 		$(id).css("opacity", "0")
 		clicked[i][j] = false;
 	}
-	// console.log(win);
+	console.log(clicked[i][j])
 	if (won){
 		win(i, j);
 	}
