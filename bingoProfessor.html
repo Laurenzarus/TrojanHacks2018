@@ -1,87 +1,66 @@
 <!Doctype html>
 <html>
     <head>
-        <title>USC Professor Bingo</title>
+        <title>USC Student Bingo</title>
         <link rel="stylesheet" type="text/css" href="bingoBoard.css">
     </head>
+    
     <body>
         <div id = "outercontainer">
             <div id="navBar">
 
             </div>
             <div id="bingoTitle" class="outOfBoxText">
-                <h1>USC BINGO</h1>
+                <a href="bingoHome.html"><h1>USC PROFESSOR BINGO</h1></a>
             </div>
             <div id="table">
                 <table>
                     <tr>
-                        <td ><img src="RedX.png" id="img00">Someone says "Fight On!"</td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
+                        <td id="data00" class="d"><img src="RedX.png" id="img00" class="x" style="opacity: 0;"><img src="GreenCheckMark.png" id="check00" class="c"></td>
+                        <td id="data01"><img src="RedX.png" id="img01"><img src="GreenCheckMark.png" id="check01"></td>
+                        <td id="data02"><img src="RedX.png" id="img02"><img src="GreenCheckMark.png" id="check02"></td>
+                        <td id="data03"><img src="RedX.png" id="img03"><img src="GreenCheckMark.png" id="check03"></td>
+                        <td id="data04"><img src="RedX.png" id="img04"><img src="GreenCheckMark.png" id="check04"></td>
                     </tr>
                     <tr>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
+                        <td id="data10"><img src="RedX.png" id="img10"><img src="GreenCheckMark.png" id="check10"></td>
+                        <td id="data11"><img src="RedX.png" id="img11"><img src="GreenCheckMark.png" id="check11"></td>
+                        <td id="data12"><img src="RedX.png" id="img12"><img src="GreenCheckMark.png" id="check12"></td>
+                        <td id="data13"><img src="RedX.png" id="img13"><img src="GreenCheckMark.png" id="check13"></td>
+                        <td id="data14"><img src="RedX.png" id="img14"><img src="GreenCheckMark.png" id="check14"></td>
                     </tr>
                     <tr>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
+                        <td id="data20"><img src="RedX.png" id="img20"><img src="GreenCheckMark.png" id="check20"></td>
+                        <td id="data21"><img src="RedX.png" id="img21"><img src="GreenCheckMark.png" id="check21"></td>
+                        <td id="data22"><img src="RedX.png" id="img22"><img src="GreenCheckMark.png" id="check22">FIGHT ON</td>
+                        <td id="data23"><img src="RedX.png" id="img23"><img src="GreenCheckMark.png" id="check23"></td>
+                        <td id="data24"><img src="RedX.png" id="img24"><img src="GreenCheckMark.png" id="check24"></td>
                     </tr>
                     <tr>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
+                        <td id="data30"><img src="RedX.png" id="img30"><img src="GreenCheckMark.png" id="check30"></td>
+                        <td id="data31"><img src="RedX.png" id="img31"><img src="GreenCheckMark.png" id="check31"></td>
+                        <td id="data32"><img src="RedX.png" id="img32"><img src="GreenCheckMark.png" id="check32"></td>
+                        <td id="data33"><img src="RedX.png" id="img33"><img src="GreenCheckMark.png" id="check33"></td>
+                        <td id="data34"><img src="RedX.png" id="img34"><img src="GreenCheckMark.png" id="check34"></td>
                     </tr>
                     <tr>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
-                        <td><img src="RedX.png"></td>
+                        <td id="data40"><img src="RedX.png" id="img40"><img src="GreenCheckMark.png" id="check40"></td>
+                        <td id="data41"><img src="RedX.png" id="img41"><img src="GreenCheckMark.png" id="check41"></td>
+                        <td id="data42"><img src="RedX.png" id="img42"><img src="GreenCheckMark.png" id="check42"></td>
+                        <td id="data43"><img src="RedX.png" id="img43"><img src="GreenCheckMark.png" id="check43"></td>
+                        <td id="data44"><img src="RedX.png" id="img44"><img src="GreenCheckMark.png" id="check44"></td>
                     </tr>
                 </table>
             </div>
+        
             <div id="youWin" class="outOfBoxText">
                 <h1>YOU WIN!!!</h1>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
-        <script>
-            console.log("Hello");//Equivalent of cout. Good for debugging code
-            //REQUIRE A RANDOMIZED ARRAY OF DATA VALUES TO TAKE FROM!
-//            var checker = new Array(5);
-//            for (var i = 0; i < 5; ++i) {
-//                var row = new Array(5);
-//                for (var j = 0; j < 5; ++j) {
-//                    //fill row with data
-//                }
-//                checker[i] = row;
-//            }
-            
-            /*
-            Example code for jquery
-            
-            $("#blue-click").click(function() {
-                Do something useful here when clicking on something with blue-click
-                $(this) refers to the current element selected. You can do something to it
-            })
-            
-            $("#button").click(function() {
-                $(#"message").css("display", "block")
-            })
-            */
-        </script>
         <script src="gameplay.js"></script>
+        <script src="profArr.js"></script>
+        <script src="bingoSort.js"></script>
     </body>
     
 </html>

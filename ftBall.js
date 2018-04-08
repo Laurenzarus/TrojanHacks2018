@@ -1,7 +1,7 @@
-var rSorted = ["Yells \"fight on\" at a tour guide","Eats cereal for dinner",
-"I'm going to go to class this year","Starts an essay at midnight",
-"Marshall snakes","Diversity :))",
-"Walks into class 10 min late",
+var rSorted = ["Touchdown USC!","The Fight Song plays",
+"Victory bell goes ding-dong","I paid $5 for a water bottle :(",
+"Marching band cacophany","Darnold throws an interception)",
+"Torchis lit",//end of changed content
 "Walks in 30 min late for 50 min class","Sleeps thru midterms",
 "Misses class completely","Gets a C in WRIT 150",
 "Finds a caterpillar in EVK","3 textbooks for $1029.30",
