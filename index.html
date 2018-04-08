@@ -38,7 +38,7 @@
     $(document).ready(function(){
         var user = sessionStorage.getItem("username");
         console.log(user);
-           if (user != ""){
+           if (user != null){
                $("#login").html("Hello " + user + "!");
                $("#login").css("opacity", "1")
            }
