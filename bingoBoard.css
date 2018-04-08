@@ -9,15 +9,18 @@ table {
 table td img {
     height: 90px;
     width: 90px;
-    position: relative;
+    position: absolute;
     left: 5px;
-    display: none;
+    opacity: 0;
+    top: 2px;
+    
 }
-td, th { /*The comma allows you to apply the same set of CSS to more tags*/
+td { /*The comma allows you to apply the same set of CSS to more tags*/
     border: 2px solid #FFC828;
     height: 100px;
     width: 100px;
     text-align: center;
+    position: relative;    
 }
 th {/*You can be more specific with th using principles of inheritance*/
     background-color: #b9c9fe;
