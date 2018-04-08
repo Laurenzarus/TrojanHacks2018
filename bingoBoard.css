@@ -12,7 +12,7 @@ table td img {
     position: absolute;
     left: 5px;
     opacity: 0;
-    top: 2px;
+    top: 6px;
     
 }
 td { /*The comma allows you to apply the same set of CSS to more tags*/
@@ -46,4 +46,8 @@ body {
 }
 .outOfBoxText {
     color: #FFC828;
+}
+a {
+    color: #FFC828;
+    text-decoration: none;
 }
