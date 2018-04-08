@@ -11,13 +11,13 @@ $(document).ready(function(){
 		}
 	}
 	clicked[2][2] = true;
+	$("#img22").css("opacity", "1")
 })
 
 $(this).click(function(event){
 	var i;
 	var j;
-	console.log(event.target.id);
-	if(event.target.id === "img00"){
+	if (event.target.id === "img00"){
 		i = 0;
 		j = 0;
 	}
@@ -61,7 +61,7 @@ $(this).click(function(event){
 		i = 2;
 		j = 0;
 	}
-	if (event.target.id === "img21)"){
+	if (event.target.id === "img21"){
 		i = 2;
 		j = 1;
 	}
@@ -121,23 +121,18 @@ $(this).click(function(event){
 		i = 4;
 		j = 4;
 	}	
-	console.log("Clicking at ");
-	console.log(i);
-	console.log(j);
-	console.log(clicked[i][j])	
 	if (!clicked[i][j]){
-		$(this).css("opacity", "1")
+		$(event.target).css("opacity", "1")
 		clicked[i][j] = true;
 		// var win = checkwin(i, j);
 	}
 	else{
-		$(this).css("opacity", "0")
+		$(event.target).css("opacity", "0")
 		clicked[i][j] = false;
 	}
 	// if (win){
 		// win(i, j);
 	// }
-	console.log(clicked[i][j])
 })
 
 // function checkwin(i, j){
