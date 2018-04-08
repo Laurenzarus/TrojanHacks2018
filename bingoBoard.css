@@ -47,14 +47,14 @@ td {
 td:hover {/*Hover pseudo-class. When I hover with my mouse over a table row, do this*/
     background-color: #f2f2f2;
 }
-#bingoTitle {
-    text-align: center;
-}
+
 body {
     background-color: #9E1D32;
 }
 #bingoTitle {
     color: #FFC828;
+    font-family: 'Bungee Shade';
+    text-align: center;
 }
 #youWin {
     text-align: center;
