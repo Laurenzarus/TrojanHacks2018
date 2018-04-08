@@ -1,9 +1,16 @@
 #header {
    text-align: center; 
+   top: 0%;
 }
 p {
 	text-align: center;
 	color: #FFC828;
+}
+#login{
+	text-align: left;
+	position: absolute;
+	top: 0%;
+	opacity: 0;
 }
 #question {
 	top: 30%;
