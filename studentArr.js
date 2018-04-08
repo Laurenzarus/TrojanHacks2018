@@ -1,13 +1,13 @@
 var rSorted = ["Yells \"fight on\" at a tour guide","Eats cereal for dinner",
-"I'm going to go to class this year","Starts an essay at midnight",
+"\"I'm going to go to class this year\"","Starts an essay at midnight",
 "Marshall snakes","Diversity :))",
 "Walks into class 10 min late",
 "Walks in 30 min late for 50 min class","Sleeps thru midterms",
 "Misses class completely","Gets a C in WRIT 150",
 "Finds a caterpillar in EVK","3 textbooks for $1029.30",
 "Gets 3 hrs of sleep","Pulls an all-nighter",
-"Pulls an all-nighter in Leavey","Is there free food?",
-"If the professor is 15 min late, we're allowed to go","Premed drops",
+"Pulls an all-nighter in Leavey","\"Is there free food?\"",
+"\"If the professor is 15 min late, we're allowed to go\"","Premed drops",
 "Hasn't seen a vegetable in days","Subsists off of cup o noodle",
 "A shower is but a distant dream","Shakespear",
 "Daddy Nikias","Sleeps thru 11am",
@@ -15,9 +15,9 @@ var rSorted = ["Yells \"fight on\" at a tour guide","Eats cereal for dinner",
 "\"I'm gonna be wholesome this year\"","Cooks a whole meal in the microwave",
 "Do you have an internship for the summer?","Applies to 100 internships, rejected from all of them",
 "\"I'm soo busy\" *watches Netflix instead","Writes an essay on a book you didn't read",
-"Pointy things", "Lectures gets cancelled!!",
-"Europe changed my life","What do you want to do with your life?",
-"Posts pics to make friends back home jealous"
+"Pointy things", "Lecture gets cancelled!!",
+"Europe changed my life!!","\"So what do you want to do with your life?\"",
+"Posts pics to make friends back home jealous","Avoids eye contact with Krispy Kreme fundraisers"
 
 // ""
 

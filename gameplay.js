@@ -313,4 +313,5 @@ function win( i, j){
 		$("#check40").css("opacity", "1")
 	}
 	$("#youWin").css("opacity", "1")
+	$("#playAgain").css("display","block")
 }
