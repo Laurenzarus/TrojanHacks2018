@@ -1,30 +1,15 @@
-var rSorted = ["Yells \"fight on\" at a tour guide","Eats cereal for dinner",
-"I'm going to go to class this year","Starts an essay at midnight",
-"Marshall snakes","Diversity :))",
-"Walks into class 10 min late",
-"Walks in 30 min late for 50 min class","Sleeps thru midterms",
-"Misses class completely","Gets a C in WRIT 150",
-"Finds a caterpillar in EVK","3 textbooks for $1029.30",
-"Gets 3 hrs of sleep","Pulls an all-nighter",
-"Pulls an all-nighter in Leavey","Is there free food?",
-"If the professor is 15 min late, we're allowed to go","Premed drops",
-"Hasn't seen a vegetable in days","Subsists off of cup o noodle",
-"A shower is but a distant dream","Shakespear",
-"Daddy Nikias","Sleeps thru 11am",
-"Never goes to 8am","\"I'm gonna be wholesome this year\"",
-"\"I'm gonna be wholesome this year\"","Cooks a whole meal in the microwave",
-"Do you have an internship for the summer?","Applies to 100 internships, rejected from all of them",
-"\"I'm soo busy\" *watches Netflix instead","Writes an essay on a book you didn't read",
-"Pointy things", "Lectures gets cancelled!!",
-"Europe changed my life","What do you want to do with your life?",
-"Posts pics to make friends back home jealous"
+var rSorted = ["If the professor is 15 min late, we're allowed to go","The first day \"Wow this is the most people who will ever come\"",
+"\"You're going to need these ten textbooks\"","Average is 54 \"You guys did really well!!\"",
+"Lecture gets cancelled!!","When you agonize over an email for an hour for a one-word reply",
+"*Looks down for 2 secs \"What's going on?\"","\"This might not be on the midterm. Eh study it anyway.\"",
+"When they give you an assignment worth your whole grade","Long-winded tangents",
+"When they go thru slides too fast","POP QUIZ",
+"Assigns essay for the day after break","Awkward laugh",
+"\"Don't start this the night before\"","*Looks around empty room \"Hm who's skipping today?\"",
+"*Skips ten steps \"Okay do you have any questions?\"","*5 min left \"Okay let's start a new chapter\"",
+"Misunderstands student's question","Chalk screeches",
+"\"Have a good weekend. Don't do anything I wouldn't do.\"","Jokes about more homework",
+"\"Oh you guys are too young to rmbr that\"","\"Did you even do the reading?\""
 
-// ""
-
-// "Agonizes over an email to a professor for an hour for a one-word reply",""
-/**
-	"*Looks down for 2 secs \"What's going on?\""
-
-*/
 
 ];

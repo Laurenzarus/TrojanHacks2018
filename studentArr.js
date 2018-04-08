@@ -19,12 +19,5 @@ var rSorted = ["Yells \"fight on\" at a tour guide","Eats cereal for dinner",
 "Europe changed my life!!","\"So what do you want to do with your life?\"",
 "Posts pics to make friends back home jealous","Avoids eye contact with Krispy Kreme fundraisers"
 
-// ""
-
-// "Agonizes over an email to a professor for an hour for a one-word reply",""
-/**
-	"*Looks down for 2 secs \"What's going on?\""
-
-*/
 
 ];
