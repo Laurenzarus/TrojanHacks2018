@@ -12,10 +12,6 @@ $(this).click(function(event){
 		i = 0;
 		j = 1;
 	}
-	if (event.target.id === "img01"){
-		i = 0;
-		j = 1;
-	}
 	if (event.target.id === "img02"){
 		i = 0;
 		j = 2;
