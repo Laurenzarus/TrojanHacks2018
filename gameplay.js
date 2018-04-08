@@ -124,20 +124,50 @@ $(this).click(function(event){
 	if (!clicked[i][j]){
 		$(event.target).css("opacity", "1")
 		clicked[i][j] = true;
-		// var win = checkwin(i, j);
+		var win = checkwin(i, j);
 	}
 	else{
 		$(event.target).css("opacity", "0")
 		clicked[i][j] = false;
 	}
+	console.log(win);
 	// if (win){
 		// win(i, j);
 	// }
 })
 
-// function checkwin(i, j){
-
-// }
+function checkwin(i, j){
+	var xrow = 0;
+	var xcol = 0;
+	var xdiagdown = 0;
+	var xdiagup = 0;
+	for (var k = 0; k < 5; k++){
+		if (clicked[k][j]){
+			xcol++;
+		}
+	}
+	for (var k = 0; k < 5; k++){
+		if (clicked[i][k]){
+			xrow++;
+		}
+	}
+	for (var k = 0; k < 5; k++){
+		if (clicked[k][k]){
+			xdiagdown++;
+		}
+	}
+	for (var k = 0; k < 5; k++){
+		if (clicked[k][4 - k]){
+			xdiagup++;
+		}
+	}
+	if (xcol >= 5 || xrow >= 5 || xdiagdown >= 5 || xdiagup >= 5){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
 
 // function win( i, j){
 
