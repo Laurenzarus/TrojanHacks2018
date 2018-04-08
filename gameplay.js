@@ -15,7 +15,7 @@ $(document).ready(function(){
 	$("#img22").css("opacity", "1")
     var user = sessionStorage.getItem("username");
     console.log(user);
-	if (user != null){
+	if (user != null && user != ""){
         $("#login").html("Hello " + user + "!");
         $("#login").css("opacity", "1")
     }

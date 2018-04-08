@@ -41,7 +41,7 @@
     $(document).ready(function(){
         var user = sessionStorage.getItem("username");
         console.log(user);
-           if (user != null){
+           if (user != null && user != ""){
                $("#login").html("Hello " + user + "!");
                $("#login").css("opacity", "1")
            }
@@ -54,7 +54,7 @@
                 var user = prompt("Please enter your first name", user);
             }
             sessionStorage.setItem("username",user);
-            if (user != null){
+            if (user != null && user != ""){
                 $("#login").html("Hello " + user + "!");
                 $("#login").css("opacity", "1")
             }
