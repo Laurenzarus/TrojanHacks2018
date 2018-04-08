@@ -4,7 +4,8 @@
         <title>USC Student Bingo</title>
         <link rel="stylesheet" type="text/css" href="bingoBoard.css">
     </head>
-    <body>
+    
+    <body onload="randomize()">
         <div id = "outercontainer">
             <div id="navBar">
 
@@ -15,42 +16,43 @@
             <div id="table">
                 <table>
                     <tr>
-                        <td><img src="RedX.png" id="img00"><img src="GreenCheckMark.png" id="check00">Someone says "Fight On!"</td>
-                        <td><img src="RedX.png" id="img01"><img src="GreenCheckMark.png" id="check01"></td>
-                        <td><img src="RedX.png" id="img02"><img src="GreenCheckMark.png" id="check02"></td>
-                        <td><img src="RedX.png" id="img03"><img src="GreenCheckMark.png" id="check03"></td>
-                        <td><img src="RedX.png" id="img04"><img src="GreenCheckMark.png" id="check04"></td>
+                        <td id="data00"><img src="RedX.png" id="img00"><img src="GreenCheckMark.png" id="check00"></td>
+                        <td id="data01"><img src="RedX.png" id="img01"><img src="GreenCheckMark.png" id="check01"></td>
+                        <td id="data02"><img src="RedX.png" id="img02"><img src="GreenCheckMark.png" id="check02"></td>
+                        <td id="data03"><img src="RedX.png" id="img03"><img src="GreenCheckMark.png" id="check03"></td>
+                        <td id="data04"><img src="RedX.png" id="img04"><img src="GreenCheckMark.png" id="check04"></td>
                     </tr>
                     <tr>
-                        <td><img src="RedX.png" id="img10"><img src="GreenCheckMark.png" id="check10"></td>
-                        <td><img src="RedX.png" id="img11"><img src="GreenCheckMark.png" id="check11"></td>
-                        <td><img src="RedX.png" id="img12"><img src="GreenCheckMark.png" id="check12"></td>
-                        <td><img src="RedX.png" id="img13"><img src="GreenCheckMark.png" id="check13"></td>
-                        <td><img src="RedX.png" id="img14"><img src="GreenCheckMark.png" id="check14"></td>
+                        <td id="data10"><img src="RedX.png" id="img10"><img src="GreenCheckMark.png" id="check10"></td>
+                        <td id="data11"><img src="RedX.png" id="img11"><img src="GreenCheckMark.png" id="check11"></td>
+                        <td id="data12"><img src="RedX.png" id="img12"><img src="GreenCheckMark.png" id="check12"></td>
+                        <td id="data13"><img src="RedX.png" id="img13"><img src="GreenCheckMark.png" id="check13"></td>
+                        <td id="data14"><img src="RedX.png" id="img14"><img src="GreenCheckMark.png" id="check14"></td>
                     </tr>
                     <tr>
-                        <td><img src="RedX.png" id="img20"><img src="GreenCheckMark.png" id="check20"></td>
-                        <td><img src="RedX.png" id="img21"><img src="GreenCheckMark.png" id="check21"></td>
-                        <td><img src="RedX.png" id="img22"><img src="GreenCheckMark.png" id="check22"></td>
-                        <td><img src="RedX.png" id="img23"><img src="GreenCheckMark.png" id="check23"></td>
-                        <td><img src="RedX.png" id="img24"><img src="GreenCheckMark.png" id="check24"></td>
+                        <td id="data20"><img src="RedX.png" id="img20"><img src="GreenCheckMark.png" id="check20"></td>
+                        <td id="data21"><img src="RedX.png" id="img21"><img src="GreenCheckMark.png" id="check21"></td>
+                        <td id="data22"><img src="RedX.png" id="img22"><img src="GreenCheckMark.png" id="check22"></td>
+                        <td id="data23"><img src="RedX.png" id="img23"><img src="GreenCheckMark.png" id="check23"></td>
+                        <td id="data24"><img src="RedX.png" id="img24"><img src="GreenCheckMark.png" id="check24"></td>
                     </tr>
                     <tr>
-                        <td><img src="RedX.png" id="img30"><img src="GreenCheckMark.png" id="check30"></td>
-                        <td><img src="RedX.png" id="img31"><img src="GreenCheckMark.png" id="check31"></td>
-                        <td><img src="RedX.png" id="img32"><img src="GreenCheckMark.png" id="check32"></td>
-                        <td><img src="RedX.png" id="img33"><img src="GreenCheckMark.png" id="check33"></td>
-                        <td><img src="RedX.png" id="img34"><img src="GreenCheckMark.png" id="check34"></td>
+                        <td id="data30"><img src="RedX.png" id="img30"><img src="GreenCheckMark.png" id="check30"></td>
+                        <td id="data31"><img src="RedX.png" id="img31"><img src="GreenCheckMark.png" id="check31"></td>
+                        <td id="data32"><img src="RedX.png" id="img32"><img src="GreenCheckMark.png" id="check32"></td>
+                        <td id="data33"><img src="RedX.png" id="img33"><img src="GreenCheckMark.png" id="check33"></td>
+                        <td id="data34"><img src="RedX.png" id="img34"><img src="GreenCheckMark.png" id="check34"></td>
                     </tr>
                     <tr>
-                        <td><img src="RedX.png" id="img40"><img src="GreenCheckMark.png" id="check40"></td>
-                        <td><img src="RedX.png" id="img41"><img src="GreenCheckMark.png" id="check41"></td>
-                        <td><img src="RedX.png" id="img42"><img src="GreenCheckMark.png" id="check42"></td>
-                        <td><img src="RedX.png" id="img43"><img src="GreenCheckMark.png" id="check43"></td>
-                        <td><img src="RedX.png" id="img44"><img src="GreenCheckMark.png" id="check44"></td>
+                        <td id="data40"><img src="RedX.png" id="img40"><img src="GreenCheckMark.png" id="check40"></td>
+                        <td id="data41"><img src="RedX.png" id="img41"><img src="GreenCheckMark.png" id="check41"></td>
+                        <td id="data42"><img src="RedX.png" id="img42"><img src="GreenCheckMark.png" id="check42"></td>
+                        <td id="data43"><img src="RedX.png" id="img43"><img src="GreenCheckMark.png" id="check43"></td>
+                        <td id="data44"><img src="RedX.png" id="img44"><img src="GreenCheckMark.png" id="check44"></td>
                     </tr>
                 </table>
             </div>
+        
             <div id="youWin" class="outOfBoxText">
                 <h1>YOU WIN!!!</h1>
             </div>
@@ -81,44 +83,8 @@
             })
             */
         </script>
-        <script>
-            // var demoString = "demo";
-            // for (i = 0; i < 25; i++){
-            //     var demoStringNum = demoString + i;
-            //     document.getElementById(demoStringNum) = rSorted[i];
-            // }
-            document.getElementById("img00").innerHTML = rSorted[0];
-            document.getElementById("img01").innerHTML = rSorted[1];
-            document.getElementById("img02").innerHTML = rSorted[2];
-            document.getElementById("img03").innerHTML = rSorted[3];
-            document.getElementById("img04").innerHTML = rSorted[4];
-
-            document.getElementById("img10").innerHTML = rSorted[5];
-            document.getElementById("img11").innerHTML = rSorted[6];
-            document.getElementById("img12").innerHTML = rSorted[7];
-            document.getElementById("img13").innerHTML = rSorted[8];
-            document.getElementById("img14").innerHTML = rSorted[9];
-
-            document.getElementById("img20").innerHTML = rSorted[10];
-            document.getElementById("img21").innerHTML = rSorted[11];
-            document.getElementById("img23").innerHTML = rSorted[12];
-            document.getElementById("img24").innerHTML = rSorted[13];
-
-            document.getElementById("img30").innerHTML = rSorted[14];
-            document.getElementById("img31").innerHTML = rSorted[15];
-            document.getElementById("img32").innerHTML = rSorted[16];
-            document.getElementById("img33").innerHTML = rSorted[17];
-            document.getElementById("img34").innerHTML = rSorted[18];
-
-            document.getElementById("img40").innerHTML = rSorted[19];
-            document.getElementById("img41").innerHTML = rSorted[20];
-            document.getElementById("img42").innerHTML = rSorted[21];
-            document.getElementById("img43").innerHTML = rSorted[22];
-            document.getElementById("img44").innerHTML = rSorted[23];
-           
-
-        </script>
         <script src="gameplay.js"></script>
+        <script src="bingoSort.js"></script>
     </body>
     
 </html>
