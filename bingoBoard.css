@@ -15,6 +15,13 @@ table td img {
     top: 6px;
     
 }
+#login{
+    text-align: left;
+    position: absolute;
+    top: 0%;
+    opacity: 0;
+    color: #FFC828;
+}
 .c {
     z-index: 100;
 }
