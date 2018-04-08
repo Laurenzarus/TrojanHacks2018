@@ -17,117 +17,139 @@ $(document).ready(function(){
 $(this).click(function(event){
 	var i;
 	var j;
-	if (event.target.id === "img00"){
+	var id;
+	if (event.target.id === "check00"){
+		id = "#img00";
 		i = 0;
 		j = 0;
 	}
-	if (event.target.id === "img01"){
+	if (event.target.id === "check01"){
+		id = "#img01";
 		i = 0;
 		j = 1;
 	}
-	if (event.target.id === "img02"){
+	if (event.target.id === "check02"){
+		id = "#img02";
 		i = 0;
 		j = 2;
 	}
-	if (event.target.id === "img03"){
+	if (event.target.id === "check03"){
+		id = "#img03";
 		i = 0;
 		j = 3;
 	}
-	if (event.target.id === "img04"){
+	if (event.target.id === "check04"){
+		id = "#img04";
 		i = 0;
 		j = 4;
 	}
-	if (event.target.id === "img10"){
+	if (event.target.id === "check10"){
+		id = "#img10";
 		i = 1;
 		j = 0;
 	}
-	if (event.target.id === "img11"){
+	if (event.target.id === "check11"){
+		id = "#img11";
 		i = 1;
 		j = 1;
 	}
-	if (event.target.id === "img12"){
+	if (event.target.id === "check12"){
+		id = "#img12";
 		i = 1;
 		j = 2;
 	}
-	if (event.target.id === "img13"){
+	if (event.target.id === "check13"){
+		id = "#img13";
 		i = 1;
 		j = 3;
 	}
-	if (event.target.id === "img14"){
+	if (event.target.id === "check14"){
+		id = "#img14";
 		i = 1;
 		j = 4;
 	}
-	if (event.target.id === "img20"){
+	if (event.target.id === "check20"){
+		id = "#img20";
 		i = 2;
 		j = 0;
 	}
-	if (event.target.id === "img21"){
+	if (event.target.id === "check21"){
+		id = "#img21";
 		i = 2;
 		j = 1;
 	}
-	if (event.target.id === "img22"){
+	if (event.target.id === "check22"){
+		id = "#img22";
 		i = 2;
 		j = 2;
 	}
-	if (event.target.id === "img23"){
+	if (event.target.id === "check23"){
+		id = "#img23";
 		i = 2;
 		j = 3;
 	}
-	if (event.target.id === "img24"){
+	if (event.target.id === "check24"){
+		id = "#img24";
 		i = 2;
 		j = 4;
 	}
-	if (event.target.id === "img30"){
+	if (event.target.id === "check30"){
+		id = "#img30";
 		i = 3;
 		j = 0;
 	}
-	if (event.target.id === "img31"){
+	if (event.target.id === "check31"){
+		id = "#img31";
 		i = 3;
 		j = 1;
 	}
-	if (event.target.id === "img32"){
+	if (event.target.id === "check32"){
+		id = "#img32";
 		i = 3;
 		j = 2;
 	}	
-	if (event.target.id === "img33"){
+	if (event.target.id === "check33"){
+		id = "#img33";
 		i = 3;
 		j = 3;
 	}
-	if (event.target.id === "img34"){
+	if (event.target.id === "check34"){
+		id = "#img34";
 		i = 3;
 		j = 4;
 	}
-	if (event.target.id === "img40"){
+	if (event.target.id === "check40"){
+		id = "#img40";
 		i = 4;
 		j = 0;
 	}
-	if (event.target.id === "img41"){
+	if (event.target.id === "check41"){
+		id = "#img41";
 		i = 4;
 		j = 1;
 	}
-	if (event.target.id === "img41"){
-		i = 4;
-		j = 1;
-	}
-	if (event.target.id === "img42"){
+	if (event.target.id === "check42"){
+		id = "#img42";
 		i = 4;
 		j = 2;
 	}
-	if (event.target.id === "img43"){
+	if (event.target.id === "check43"){
+		id = "#img43";
 		i = 4;
 		j = 3;
 	}
-	if (event.target.id === "img44"){
+	if (event.target.id === "check44"){
+		id = "#img44";
 		i = 4;
 		j = 4;
 	}	
 	if (!clicked[i][j]){
-		$(event.target).css("opacity", "1")
+		$(id).css("opacity", "1")
 		clicked[i][j] = true;
 		var won = checkwin(i, j);
 	}
 	else{
-		$(event.target).css("opacity", "0")
+		$(id).css("opacity", "0")
 		clicked[i][j] = false;
 	}
 	// console.log(win);
@@ -175,12 +197,12 @@ function win( i, j){
 	var xdiagdown = 0;
 	var xdiagup = 0;
 	for (var k = 0; k < 5; k++){
-		if (clicked[k][j]){
+		if (clicked[i][k]){
 			xcol++;
 		}
 	}
 	for (var k = 0; k < 5; k++){
-		if (clicked[i][k]){
+		if (clicked[k][j]){
 			xrow++;
 		}
 	}
