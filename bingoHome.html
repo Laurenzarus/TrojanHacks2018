@@ -35,10 +35,15 @@
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
     <script>
         function logIn(){
+            // inport System.IO;
+            // inport System;
             var user = prompt("please enter your first name", "Tommy");
             console.log(user);
-        $("#login").append(user + "!");
-        $("#login").css("opacity", "1")
+            // sw = new StreamWriter("UserName.txt");
+            // sw.Write(user);
+            // sw.Close();
+            $("#login").append(user + "!");
+            $("#login").css("opacity", "1")
         }
     </script>
 </html>
