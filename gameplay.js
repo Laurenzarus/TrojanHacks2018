@@ -1,152 +1,286 @@
 console.log("JavaScript is working");
-$(document).ready(init)
-$(this).click(function(event){
-	var i;
-	var j;
-	if(event.target === "#img00"){
-		i = 0;
-		j = 0;
-	}
-	if (event.target === "#img01"){
-		i = 0;
-		j = 1;
-	}
-	if (event.target === "#img01"){
-		i = 0;
-		j = 1;
-	}
-	if (event.target === "#img02"){
-		i = 0;
-		j = 2;
-	}
-	if (event.target === "#img03"){
-		i = 0;
-		j = 3;
-	}
-	if (event.target === "#img04"){
-		i = 0;
-		j = 4;
-	}
-	if (event.target === "#img10"){
-		i = 1;
-		j = 0;
-	}
-	if (event.target === "#img11"){
-		i = 1;
-		j = 1;
-	}
-	if (event.target === "#img12"){
-		i = 1;
-		j = 2;
-	}
-	if (event.target === "#img13"){
-		i = 1;
-		j = 3;
-	}
-	if (event.target === "#img14"){
-		i = 1;
-		j = 4;
-	}
-	if (event.target === "#img20"){
-		i = 2;
-		j = 0;
-	}
-	if (event.target === "#img21)"){
-		i = 2;
-		j = 1;
-	}
-	if (event.target === "#img22"){
-		i = 2;
-		j = 2;
-	}
-	if (event.target === "#img23"){
-		i = 2;
-		j = 3;
-	}
-	if (event.target === "#img24"){
-		i = 2;
-		j = 4;
-	}
-	if (event.target === "#img30"){
-		i = 3;
-		j = 0;
-	}
-	if (event.target === "#img31"){
-		i = 3;
-		j = 1;
-	}
-	if (event.target === "#img32"){
-		i = 3;
-		j = 2;
-	}	
-	if (event.target === "#img33"){
-		i = 3;
-		j = 3;
-	}
-	if (event.target === "#img34"){
-		i = 3;
-		j = 4;
-	}
-	if (event.target === "#img40"){
-		i = 4;
-		j = 0;
-	}
-	if (event.target === "#img41"){
-		i = 4;
-		j = 1;
-	}
-	if (event.target === "#img41"){
-		i = 4;
-		j = 1;
-	}
-	if (event.target === "#img42"){
-		i = 4;
-		j = 2;
-	}
-	if (event.target === "#img43"){
-		i = 4;
-		j = 3;
-	}
-	if (event.target === "#img44"){
-		i = 4;
-		j = 4;
-	}
-	console.log("Clicking at ");
-	console.log(i);
-	console.log(" ");
-	console.log(j);
-	if (!clicked[i][j]){
-		$(this).css("opacity", "1")
-		clicked[i][j] = true;
-		// var win = checkwin(i, j);
-	}
-	else{
-		$(this).css("opacity", "0")
-		clicked[i][j] = false;
-	}
-	if (win){
-		// win(i, j);
-	}
-})
-
-var init = function(){
-	console.log("Jquery is working!")	
-	var clicked = new Array(5);
-	for (var i = 0; i < 5; i++){
-		clicked[i] = new Array(5);
-	}
+var clicked = new Array(5);
+for (var i = 0; i < 5; i++){
+	clicked[i] = new Array(5);
+}
+$(document).ready(function(){
+	console.log("Jquery is working!")
 	for (var i = 0; i < 5; i++){
 		for (var j = 0; j < 5; j++){
 			clicked[i][j] = false;
 		}
 	}
 	clicked[2][2] = true;
+	$("#img22").css("opacity", "1")
+})
+
+$(this).click(function(event){
+	var i;
+	var j;
+	if (event.target.id === "img00"){
+		i = 0;
+		j = 0;
+	}
+	if (event.target.id === "img01"){
+		i = 0;
+		j = 1;
+	}
+	if (event.target.id === "img02"){
+		i = 0;
+		j = 2;
+	}
+	if (event.target.id === "img03"){
+		i = 0;
+		j = 3;
+	}
+	if (event.target.id === "img04"){
+		i = 0;
+		j = 4;
+	}
+	if (event.target.id === "img10"){
+		i = 1;
+		j = 0;
+	}
+	if (event.target.id === "img11"){
+		i = 1;
+		j = 1;
+	}
+	if (event.target.id === "img12"){
+		i = 1;
+		j = 2;
+	}
+	if (event.target.id === "img13"){
+		i = 1;
+		j = 3;
+	}
+	if (event.target.id === "img14"){
+		i = 1;
+		j = 4;
+	}
+	if (event.target.id === "img20"){
+		i = 2;
+		j = 0;
+	}
+	if (event.target.id === "img21"){
+		i = 2;
+		j = 1;
+	}
+	if (event.target.id === "img22"){
+		i = 2;
+		j = 2;
+	}
+	if (event.target.id === "img23"){
+		i = 2;
+		j = 3;
+	}
+	if (event.target.id === "img24"){
+		i = 2;
+		j = 4;
+	}
+	if (event.target.id === "img30"){
+		i = 3;
+		j = 0;
+	}
+	if (event.target.id === "img31"){
+		i = 3;
+		j = 1;
+	}
+	if (event.target.id === "img32"){
+		i = 3;
+		j = 2;
+	}	
+	if (event.target.id === "img33"){
+		i = 3;
+		j = 3;
+	}
+	if (event.target.id === "img34"){
+		i = 3;
+		j = 4;
+	}
+	if (event.target.id === "img40"){
+		i = 4;
+		j = 0;
+	}
+	if (event.target.id === "img41"){
+		i = 4;
+		j = 1;
+	}
+	if (event.target.id === "img41"){
+		i = 4;
+		j = 1;
+	}
+	if (event.target.id === "img42"){
+		i = 4;
+		j = 2;
+	}
+	if (event.target.id === "img43"){
+		i = 4;
+		j = 3;
+	}
+	if (event.target.id === "img44"){
+		i = 4;
+		j = 4;
+	}	
+	if (!clicked[i][j]){
+		$(event.target).css("opacity", "1")
+		clicked[i][j] = true;
+		var won = checkwin(i, j);
+	}
+	else{
+		$(event.target).css("opacity", "0")
+		clicked[i][j] = false;
+	}
+	// console.log(win);
+	if (won){
+		win(i, j);
+	}
+})
+
+function checkwin(i, j){
+	var xrow = 0;
+	var xcol = 0;
+	var xdiagdown = 0;
+	var xdiagup = 0;
+	for (var k = 0; k < 5; k++){
+		if (clicked[k][j]){
+			xcol++;
+		}
+	}
+	for (var k = 0; k < 5; k++){
+		if (clicked[i][k]){
+			xrow++;
+		}
+	}
+	for (var k = 0; k < 5; k++){
+		if (clicked[k][k]){
+			xdiagdown++;
+		}
+	}
+	for (var k = 0; k < 5; k++){
+		if (clicked[k][4 - k]){
+			xdiagup++;
+		}
+	}
+	if (xcol >= 5 || xrow >= 5 || xdiagdown >= 5 || xdiagup >= 5){
+		return true;
+	}
+	else{
+		return false;
+	}
 }
 
-// function checkwin(i, j){
-
-// }
-
-// function win( i, j){
-
-// }
+function win( i, j){
+		var xrow = 0;
+	var xcol = 0;
+	var xdiagdown = 0;
+	var xdiagup = 0;
+	for (var k = 0; k < 5; k++){
+		if (clicked[k][j]){
+			xcol++;
+		}
+	}
+	for (var k = 0; k < 5; k++){
+		if (clicked[i][k]){
+			xrow++;
+		}
+	}
+	for (var k = 0; k < 5; k++){
+		if (clicked[k][k]){
+			xdiagdown++;
+		}
+	}
+	for (var k = 0; k < 5; k++){
+		if (clicked[k][4 - k]){
+			xdiagup++;
+		}
+	}
+	if (xcol >= 5){
+		if (i === 0){
+			$("#check00").css("opacity", "1")
+			$("#check01").css("opacity", "1")
+			$("#check02").css("opacity", "1")
+			$("#check03").css("opacity", "1")
+			$("#check04").css("opacity", "1")
+		}
+		if (i === 1){
+			$("#check10").css("opacity", "1")
+			$("#check11").css("opacity", "1")
+			$("#check12").css("opacity", "1")
+			$("#check13").css("opacity", "1")
+			$("#check14").css("opacity", "1")
+		}
+		if (i === 2){
+			$("#check20").css("opacity", "1")
+			$("#check21").css("opacity", "1")
+			$("#check22").css("opacity", "1")
+			$("#check23").css("opacity", "1")
+			$("#check24").css("opacity", "1")
+		}
+		if (i === 3){
+			$("#check30").css("opacity", "1")
+			$("#check31").css("opacity", "1")
+			$("#check32").css("opacity", "1")
+			$("#check33").css("opacity", "1")
+			$("#check34").css("opacity", "1")
+		}
+		if (i === 4){
+			$("#check40").css("opacity", "1")
+			$("#check41").css("opacity", "1")
+			$("#check42").css("opacity", "1")
+			$("#check43").css("opacity", "1")
+			$("#check44").css("opacity", "1")
+		}
+	}
+	if (xrow >= 5){
+		if (j === 0){
+			$("#check00").css("opacity", "1")
+			$("#check10").css("opacity", "1")
+			$("#check20").css("opacity", "1")
+			$("#check30").css("opacity", "1")
+			$("#check40").css("opacity", "1")
+		}
+		if (j === 1){
+			$("#check01").css("opacity", "1")
+			$("#check11").css("opacity", "1")
+			$("#check21").css("opacity", "1")
+			$("#check31").css("opacity", "1")
+			$("#check41").css("opacity", "1")
+		}
+		if (j === 2){
+			$("#check02").css("opacity", "1")
+			$("#check12").css("opacity", "1")
+			$("#check22").css("opacity", "1")
+			$("#check32").css("opacity", "1")
+			$("#check42").css("opacity", "1")
+		}
+		if (j === 3){
+			$("#check03").css("opacity", "1")
+			$("#check13").css("opacity", "1")
+			$("#check23").css("opacity", "1")
+			$("#check33").css("opacity", "1")
+			$("#check43").css("opacity", "1")
+		}
+		if (j === 4){
+			$("#check04").css("opacity", "1")
+			$("#check14").css("opacity", "1")
+			$("#check24").css("opacity", "1")
+			$("#check34").css("opacity", "1")
+			$("#check44").css("opacity", "1")
+		}	
+	}
+	if (xdiagdown >= 5){
+		$("#check00").css("opacity", "1")
+		$("#check11").css("opacity", "1")
+		$("#check22").css("opacity", "1")
+		$("#check33").css("opacity", "1")
+		$("#check44").css("opacity", "1")
+	}
+	if (xdiagup >= 5){
+		$("#check04").css("opacity", "1")
+		$("#check13").css("opacity", "1")
+		$("#check22").css("opacity", "1")
+		$("#check31").css("opacity", "1")
+		$("#check40").css("opacity", "1")
+	}
+	$("#youWin").css("opacity", "1")
+}
