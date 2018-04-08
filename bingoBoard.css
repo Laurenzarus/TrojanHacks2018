@@ -1,0 +1,46 @@
+table {
+/*    position: relative;*/
+/*    left: 27%;*/
+    border: 6px solid #FFC828;
+    border-collapse: collapse; /*Collapse gives a single line as opposed to double bordered tables*/
+    margin-right: auto;
+    margin-left: auto;
+}
+table td img {
+    height: 90px;
+    width: 90px;
+    position: relative;
+    left: 5px;
+    display: none;
+}
+td, th { /*The comma allows you to apply the same set of CSS to more tags*/
+    border: 2px solid #FFC828;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+th {/*You can be more specific with th using principles of inheritance*/
+    background-color: #b9c9fe;
+}
+td {
+    background-color: white;
+}
+td:hover {/*Hover pseudo-class. When I hover with my mouse over a table row, do this*/
+    background-color: #f2f2f2;
+}
+#bingoTitle {
+    text-align: center;
+}
+body {
+    background-color: #9E1D32;
+}
+#bingoTitle {
+    color: #FFC828;
+}
+#youWin {
+    text-align: center;
+    font-size: 35px;
+}
+.outOfBoxText {
+    color: #FFC828;
+}
