@@ -1,9 +1,11 @@
 #header {
    text-align: center; 
    top: 0%;
+   left: 23.5%;
    font-family: 'Bungee Shade'; 
    font-size: 36pt;
    line-height: 0%;
+   position: absolute;
 }
 p {
 	text-align: center;
@@ -11,7 +13,7 @@ p {
 }
 #login{
 	text-align: left;
-	position: relative;
+	position: absolute;
 	top: 0%;
 	opacity: 0;
 }
