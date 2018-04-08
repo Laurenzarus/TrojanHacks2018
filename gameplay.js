@@ -1,5 +1,18 @@
 console.log("JavaScript is working");
-$(document).ready(init)
+var clicked = new Array(5);
+for (var i = 0; i < 5; i++){
+	clicked[i] = new Array(5);
+}
+$(document).ready(function(){
+	console.log("Jquery is working!")
+	for (var i = 0; i < 5; i++){
+		for (var j = 0; j < 5; j++){
+			clicked[i][j] = false;
+		}
+	}
+	clicked[2][2] = true;
+})
+
 $(this).click(function(event){
 	var i;
 	var j;
@@ -107,10 +120,11 @@ $(this).click(function(event){
 	if (event.target.id === "img44"){
 		i = 4;
 		j = 4;
-	}
+	}	
 	console.log("Clicking at ");
 	console.log(i);
 	console.log(j);
+	console.log(clicked[i][j])	
 	if (!clicked[i][j]){
 		$(this).css("opacity", "1")
 		clicked[i][j] = true;
@@ -120,24 +134,11 @@ $(this).click(function(event){
 		$(this).css("opacity", "0")
 		clicked[i][j] = false;
 	}
-	if (win){
+	// if (win){
 		// win(i, j);
-	}
+	// }
+	console.log(clicked[i][j])
 })
-
-var init = function(){
-	console.log("Jquery is working!")	
-	var clicked = new Array(5);
-	for (var i = 0; i < 5; i++){
-		clicked[i] = new Array(5);
-	}
-	for (var i = 0; i < 5; i++){
-		for (var j = 0; j < 5; j++){
-			clicked[i][j] = false;
-		}
-	}
-	clicked[2][2] = true;
-}
 
 // function checkwin(i, j){
 
