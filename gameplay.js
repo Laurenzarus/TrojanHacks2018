@@ -1,5 +1,5 @@
 console.log("JavaScript is working");
-var user = "";
+var user = null;
 var clicked = new Array(5);
 for (var i = 0; i < 5; i++){
 	clicked[i] = new Array(5);
@@ -15,7 +15,7 @@ $(document).ready(function(){
 	$("#img22").css("opacity", "1")
     var user = sessionStorage.getItem("username");
     console.log(user);
-	if (user != null && user != ""){
+	if (user != null && user != "" && user != "null"){
         $("#login").html("Hello " + user + "!");
         $("#login").css("opacity", "1")
     }

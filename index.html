@@ -39,9 +39,10 @@
     <script>
     var user = null;
     $(document).ready(function(){
+        $("#login").css("opacity", "0")
         var user = sessionStorage.getItem("username");
         console.log(user);
-           if (user != null && user != ""){
+           if (user != null && user != "" && user != "null"){
                $("#login").html("Hello " + user + "!");
                $("#login").css("opacity", "1")
            }
@@ -53,8 +54,13 @@
             else{
                 var user = prompt("Please enter your first name", user);
             }
-            sessionStorage.setItem("username",user);
-            if (user != null && user != ""){
+            if (user === null){
+                sessionStorage.setItem("username",null);    
+            }
+            else{
+                sessionStorage.setItem("username",user);
+            }
+            if (user != null && user != "" && user != "null"){
                 $("#login").html("Hello " + user + "!");
                 $("#login").css("opacity", "1")
             }
