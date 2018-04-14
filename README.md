@@ -1,4 +1,4 @@
-# TrojanHacks Strikes Back 2018 project: USC Bingo
+# TrojanHacks Strikes Back 2018 Project: USC Bingo
 Made in a 24-hour period and based entirely in HTML/CSS and JavaScript, this program creates bingo boards for the user to play on based on certain USC-focused categories. Clicking the picture of the students, for example, will generate a bingo board with USC student-focused information in the squares. Notice that reloading the bingo board page randomizes the information in board squares so no two playthroughs are completely identical.
 
 ## Team members
